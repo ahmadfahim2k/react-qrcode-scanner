@@ -14,7 +14,7 @@ function Scanner() {
             try {
                 console.log(camera);
                 await html5Qrcode.start(
-                    camera,
+                    { facingMode: "environment" },
                     {
                         fps: 10,
                         qrbox: { width: 200, height: 200 }
